@@ -46,7 +46,7 @@ A(User Membuka Landing Page) --> B[Navbar]
 B --> C[Hero Section-Download App]
 C --> D{CTA Download}
 D --> |Play store| E[Android] 
-D --> |iOS| F[iOS]
+D --> |App store| F[iOS]
 E --> G[Download & Install]
 F --> G
 G --> H[Login/Register]
