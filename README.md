@@ -30,7 +30,7 @@ O --> F
 N --> R[setelah ujian praktek terakhir]
 R --> S[Ujian akhir]
 S --> U{Lulus Ujian Akhir?}
-U --> |lulus| V[Menyelesaikan Materi Module]
+U --> |lulus| V[Menyelesaikan Module]
 U --> |gagal| W[Mengulang ujian akhir]
 W --> S
 
