@@ -37,4 +37,20 @@ W --> S
 
    
 ```
+---
 
+# Landing Page guide
+```mermaid
+flowchart TD
+A(User Membuka Landing Page) --> B[Navbar]
+B --> C[Hero Section-Download App]
+C --> D{CTA Download}
+D --> |Play store| E[Android] 
+D --> |iOS| F[iOS]
+E --> G[Download & Install]
+F --> G
+G --> H[Login/Register]
+H --> I[Gunakan Aplikasi]
+
+
+```
