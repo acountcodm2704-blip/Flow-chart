@@ -1,38 +1,40 @@
 # Learning Flow
 ```mermaid
 flowchart TD
-A(Student Buka Course) --> B{memilih Module}
-B --> A2[module 1]
-B --> A3[module 2]
-B --> A4[module 3]
+A(Student Buka Course) --> B{Memilih Module}
+B --> A2[Module 1]
+B --> A3[Module 2]
+B --> A4[Module 3]
 A2 --> A1
 A3 --> A1
 A4 --> A1[Load Module & Lesson List]
 A1 --> C[Pilih section]
 C --> D{Section 1}
 D --> E{Bab 1}
-D --> F[Ujian praktek]
+D --> F[Ujian Section]
 E --> G[video & materi]
-E --> H[practice]
+E --> H[Ujian Bab]
 G --> H
-H --> I{Lulus practice?}
-I --> |lulus| J[ke bab selanjutnya]
-I --> |gagal| K[Mengulang practice]
+H --> I{Lulus Ujian Bab?}
+I --> |lulus| J[Update tracking progres]
+I --> |gagal| K[Mengulang Ujian Bab]
 K --> H
-J --> L[next bab]
+J --> L[Next New Bab]
 L --> F
-F --> M{Lulus ujian praktek?}
-M --> |lulus| N[Next section]
-M --> |gagal| O[Mengulang ujian praktek]
+F --> M{Lulus Ujian Section?}
+M --> |lulus| N1[Update tracking progres]
+M --> |gagal| O[Mengulang Ujian Section]
 O --> F
+N1 --> N[Next New Section]
 
 
-N --> R[setelah ujian praktek terakhir]
-R --> S[Ujian akhir]
-S --> U{Lulus Ujian Akhir?}
-U --> |lulus| V[Menyelesaikan Module]
-U --> |gagal| W[Mengulang ujian akhir]
+N --> R[Setelah Ujian Section Terakhir]
+R --> S[Ujian Akhir Module]
+S --> U{Lulus Ujian Akhir Module?}
+U --> |lulus| V[Update tracking progres]
+U --> |gagal| W[Mengulang Ujian Akhir Module]
 W --> S
+V --> X[Student Menyelesaikan Module]
 
 
    
