@@ -1,7 +1,7 @@
 # Learning Flow
 ```mermaid
 flowchart TD
-A(Student Buka Course) --> B{Memilih Module}
+A([Student Buka Course]) --> B{Memilih Module}
 B --> A2[Module 1]
 B --> A3[Module 2]
 B --> A4[Module 3]
@@ -34,7 +34,7 @@ S --> U{Lulus Ujian Akhir Module?}
 U --> |lulus| V[Update tracking progres]
 U --> |gagal| W[Mengulang Ujian Akhir Module]
 W --> S
-V --> X[Student Menyelesaikan Module]
+V --> X([Student Menyelesaikan Module])
 
 
    
@@ -44,7 +44,7 @@ V --> X[Student Menyelesaikan Module]
 # Landing Page guide
 ```mermaid
 flowchart TD
-A(User Membuka Landing Page) --> B[Navbar]
+A([User Membuka Landing Page]) --> B[Navbar]
 B --> C[Hero Section-Download App]
 C --> D{CTA Download}
 D --> |Play store| E[Android] 
@@ -52,7 +52,7 @@ D --> |App store| F[iOS]
 E --> G[Download & Install]
 F --> G
 G --> H[Login/Register]
-H --> I[Gunakan Aplikasi]
+H --> I([Gunakan Aplikasi])
 
 
 ```
