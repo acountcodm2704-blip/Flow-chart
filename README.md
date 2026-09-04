@@ -1,9 +1,15 @@
 # Learning Flow
 ```mermaid
 flowchart TD
-A(Student Buka Course) --> B[Load Module & Lesson List]
-B --> C[Pilih Lesson]
-C --> D{Section HTMl}
+A(Student Buka Course) --> B{memilih Module}
+B --> A2[module 1]
+B --> A3[module 2]
+B --> A4[module 3]
+A2 --> A1
+A3 --> A1
+A4 --> A1[Load Module & Lesson List]
+A1 --> C[Pilih section]
+C --> D{Section 1}
 D --> E{Bab 1}
 D --> F[Ujian praktek]
 E --> G[video & materi]
@@ -12,18 +18,21 @@ G --> H
 H --> I{Lulus practice?}
 I --> |lulus| J[ke bab selanjutnya]
 I --> |gagal| K[Mengulang practice]
-J --> L{next bab}
+K --> H
+J --> L[next bab]
 L --> F
 F --> M{Lulus ujian praktek?}
-M --> |lulus| N[ke section selanjutnya]
+M --> |lulus| N[Next section]
 M --> |gagal| O[Mengulang ujian praktek]
-N --> P[Next section]
-P --> Q[Section css-js]
-Q --> R[setelah ujian praktek js]
+O --> F
+
+
+N --> R[setelah ujian praktek terakhir]
 R --> S[Ujian akhir]
 S --> U{Lulus Ujian Akhir?}
-U --> |lulus| V[Menyelesaikan Materi Preprogram]
+U --> |lulus| V[Menyelesaikan Materi Module]
 U --> |gagal| W[Mengulang ujian akhir]
+W --> S
 
 
    
