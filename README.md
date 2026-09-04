@@ -7,7 +7,7 @@ B --> A3[Module 2]
 B --> A4[Module 3]
 A2 --> A1
 A3 --> A1
-A4 --> A1[Load Module & Lesson List]
+A4 --> A1[Load Module & Section List]
 A1 --> C[Pilih section]
 C --> D{Section 1}
 D --> E{Bab 1}
