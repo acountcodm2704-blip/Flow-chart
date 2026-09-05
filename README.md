@@ -44,15 +44,19 @@ V --> X([Student Menyelesaikan Module])
 # Landing Page guide
 ```mermaid
 flowchart TD
-A([User Membuka Landing Page]) --> B[Navbar]
-B --> C[Hero Section-Download App]
-C --> D{CTA Download}
+A([User Membuka Landing Page]) --> B[Navbar-Login/Register]
+B --> C[Hero Section]
+C --> J[Product Explanation]
+J --> K[Sponsor]
+K --> D{CTA Download}
 D --> |Play store| E[Android] 
 D --> |App store| F[iOS]
 E --> G[Download & Install]
 F --> G
-G --> H[Login/Register]
-H --> I([Gunakan Aplikasi])
+G --> L[Daftar
+Subcription/Pricing]
+L --> H[Copy Right]
+H --> I([User Menggunakan Aplikasi])
 
 
 ```
